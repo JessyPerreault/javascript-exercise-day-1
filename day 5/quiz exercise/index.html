@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Rick and Morty Quiz</h1>
+    <br>
+    <br>
+    <form name="myForm" action="">
+        <div>
+            <label for="question1"><h2>1. What Vocal Tick Does Rick Have?</h2></label>
+            <br>
+            <input type="text" name="question1" id="question1" placeholder="Answer:" required>
+        </div>
+        <br>
+        <div>
+            <label for="question2"><h2>2. Who Shot Mr. Poopy Butthole?</h2></label>
+            <br>
+            <input type="text" name="question2" id="question2" placeholder="Answer:" required>
+        </div>
+        <br>
+        <div>
+            <h2>3. What Is The Name Of The Song Created By Rick To Appease The Giant Head In The Sky?</h2>
+            <br>
+            <label class="formMargin" for="radio">Tiny Rick Rules:</label>
+            <input type="radio" name="radio" id="radio1" required>
+            <label for="radio">Get Schwifty:</label>
+            <input type="radio" name="radio" id="radio2" required>
+            <label for="radio">The Rick Dance:</label>
+            <input type="radio" name="radio" id="radio3"  required>
+            <label for="radio">Wubba Lubba Dub Dub:</label>
+            <input type="radio" name="radio" id="radio4" required>
+        </div>
+        <br>
+        <div>
+            <h2>4. Who Did King Jellybean Assault?</h2>
+            <br>
+            <label class="formMargin" for="radio2">Rick:</label>
+            <input type="radio" name="radio2" id="radio5" required>
+            <label for="radio2">Jerry:</label>
+            <input type="radio" name="radio2" id="radio6" required>
+            <label for="radio2">Morty:</label>
+            <input type="radio" name="radio2" id="radio7" required>
+            <label for="radio2">Summer:</label>
+            <input type="radio" name="radio2" id="radio8" required>
+        </div>
+        <br>
+        <div>
+            <h2>5. What Sort Of McDonald's Sauce Is Rick Obsessed With?</h2>
+            <br>
+            <label class="formMargin" for="checkbox">Tomato</label>
+            <input type="checkbox" name="checkbox" id="check1">
+            <label for="checkbox">BBQ</label>
+            <input type="checkbox" name="checkbox" id="check2">
+            <label for="checkbox">Brown</label>
+            <input type="checkbox" name="checkbox" id="check3">
+            <label for="checkbox">Szechuan</label>
+            <input type="checkbox" name="checkbox" id="check4">
+        </div>
+        <br>
+
+        <button class="submitStyle" type="submit" id="quizButton" name=quizButton>Get Score!</button>
+        
+        <div>
+            <p name="yourScore" id="yourScore"></p>
+            <br>
+            <img id="image" src="./images/maxresdefault-3-6.jpg" width="500" height="300"  alt="">
+            <br>
+            <input class="resetStyle" id="reset" name="reset" type="reset" value="Reset" style="display: none" onClick="window.location.reload()">
+            
+        </div>
+        
+    </form>
+
+    
+
+
+    <footer>
+        <p>
+             All questions and answers taken from <a href="https://www.thequiz.com/the-ultimate-rick-and-morty-quiz-for-the-ultimate-fan/">www.thequiz.com</a>
+        </p>
+        <p>Also this quiz has been made to look good. :)</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -16,17 +16,17 @@ if (Modernizr.geolocation) {
 
 
 // ???????????????????????????????????????????????? 
-// function(allDivs) {
-// var allDivs = document.querySelectorAll("div");
-
-// for (var i = 0; i < allDivs.length; i++) {
-//     var allDiv = allDivs[i];
-// } 
-// if (allDiv % 2 === 0) {
-//     allDivs.style.backgroundColor = "blue";
-// } else {
-//     allDivs.style.backgroundColor = "red";
-// }
+// function(allDivs) {                            ?
+// var allDivs = document.querySelectorAll("div");?
+                                              //  ?
+// for (var i = 0; i < allDivs.length; i++) {     ? 
+//     var allDiv = allDivs[i];                   ?
+// }                                              ?
+// if (allDiv % 2 === 0) {                        ?
+//     allDivs.style.backgroundColor = "blue";    ?
+// } else {                                       ?
+//     allDivs.style.backgroundColor = "red";     ?
+// }                                              ?
 // } ??????????????????????????????????????????????
 
 
