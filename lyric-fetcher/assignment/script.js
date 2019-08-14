@@ -2,6 +2,11 @@
 var myForm = document.querySelector("myForm");
 var searchButton = document.querySelector("#search");
 
+
+function myTimer() {
+  document.getElementById("lyrics").innerHTML = "Error: It seems like those lyrics may not exist in the database." + "<br>" + "Please try something else";
+}
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   // document.getElementById("main").style.marginLeft = "250px";
@@ -14,6 +19,7 @@ function closeNav() {
 
 searchButton.addEventListener("click", function(event) {
   event.preventDefault();
+  var startTimer = setInterval(myTimer, 30000);
   document.getElementById("lyrics").style.padding = "0px";
   document.getElementById("lyrics").style.borderRadius = "0px";
   document.getElementById("lyrics").style.background = "rgba(170, 70, 120, 0)";
@@ -36,6 +42,7 @@ searchButton.addEventListener("click", function(event) {
       return response.json();
     })
     .then(function(data) {
+      clearTimeout(startTimer);
       var lyrics = data.lyrics.replace(/\n/g, "<br>");
       output.innerHTML = lyrics;
       document.getElementById("lyrics").style.padding = "20px 20px";
@@ -49,6 +56,7 @@ searchButton.addEventListener("click", function(event) {
       // }
     })
     .catch(function(error) {
-      console.log(error);
+      document.getElementById("lyrics").innerHTML = "Error: It seems like those lyrics may not exist in the database.";
     });
+
 });
